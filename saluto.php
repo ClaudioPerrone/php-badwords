@@ -20,12 +20,15 @@ $badword = $_POST['badword'];
     </div>
 
     <div>
-        <h1>IL TESTO E':</h1>
-        <p><?php echo $str_replace($badword,"***",$paragraph); ?></p>
+        <h1>IL TESTO EDITATO E':</h1>
+        <h2>
+            <?php
+            echo str_replace($badword,"***",$paragraph); 
+            ?>
+        </h2>
+        <h1>IL TESTO E' LUNGO:</h1>
+        <h2><?php echo strlen($paragraph)?></h2>
     </div>
-
-
-    <h2>Il testo è: <?php echo $badword; ?></h1>
 
 </body>
 </html>
